@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom">
 <channel>
-  <atom:link href="https://chrislorensson.com/podcast/feed.rss" rel="self" type="application/rss+xml" />
+  <atom:link href="https://chrislorensson.com/sgss/feed.rss" rel="self" type="application/rss+xml" />
   <itunes:new-feed-url>https://slurpgulpandstartonsounds.com/podcast/feed.rss</itunes:new-feed-url>
   <title>Slurp, Gulp and Start on Sounds</title>
   <lastBuildDate>Mon, 9 Jun 2025 11:31:21 -0400</lastBuildDate>
