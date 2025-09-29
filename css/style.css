@@ -92,6 +92,15 @@ body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
+header#banner {
+  background-color: black;
+  color: white;
+  text-align: center;
+  font-style: italic;
+  padding: 2px 1rem;
+  font-size: 0.75rem;
+}
+
 a, a:visited {
   color: #2D53FA;
 }
