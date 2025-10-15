@@ -92,6 +92,53 @@ body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
+ul#book-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+}
+
+ul#book-list li {
+  flex-grow: 1;
+  width: 45%;
+  max-width: 250px;
+  margin: 0 5% 5% 0;
+}
+
+ul#book-list li > * {
+  margin: 0.5rem 0 0 0;
+}
+
+ul#book-list li p {
+  font-style: italic;
+  color: #565656;
+  font-size: 0.75rem;
+}
+
+ul#book-list img {
+  display: block;
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+ul#book-list a.button,
+ul#book-list a.button:visited {
+  display: inline-block;
+  padding: 0 0.75rem;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 5px;
+  border: 1px solid #004cef;
+  text-decoration: none;
+}
+
+ul#book-list a.button:hover {
+  text-decoration: underline
+}
+
 header#banner {
   background-color: black;
   color: white;
@@ -155,7 +202,7 @@ h1, .h1 {
   font-size: 1.88888889em;
   line-height: 1.35294118em;
   margin-top: 0.67647059em;
-  margin-bottom: 1.35294118em;
+  margin-bottom: 0;
 }
 h2, .h2 {
   font-size: 1.5em;
