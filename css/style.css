@@ -158,6 +158,16 @@ a, a:visited {
   background-size: cover;
 } */
 
+article > header#block {
+  background-color: #FFCEFD;
+  background: linear-gradient(20deg, #E4FFFE, #FFF6CA, #FFCEFD);
+}
+
+article > header#block, 
+article > header#block a {
+  color: #101010;
+}
+
 article > header, article > footer {
   background-color: #F92E52;
   color: #fff;
