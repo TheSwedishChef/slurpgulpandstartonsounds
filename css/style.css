@@ -92,6 +92,26 @@ body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
+#gallery {
+  display: flex;
+  flex-direction: row;
+  max-width: 100%;
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+  padding: 1px 0 0 1px;
+}
+
+#gallery > a {
+  flex-grow: 1;
+  padding-right: 1px;
+}
+
+#gallery img {
+  display: block;
+  border-collapse: collapse;
+  width: 100%;
+}
+
 ul#book-list {
   list-style-type: none;
   margin: 0;
@@ -124,19 +144,39 @@ ul#book-list img {
   border-radius: 5px;
 }
 
-ul#book-list a.button,
-ul#book-list a.button:visited {
+a.button,
+a.button:visited {
   display: inline-block;
-  padding: 0 0.75rem;
-  height: 40px;
-  line-height: 40px;
-  border-radius: 5px;
-  border: 1px solid #004cef;
+  padding: 0 1rem;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 52px;
+  border: 2px solid #004cef;
+  margin: 0 4px 4px 0;
   text-decoration: none;
+  transition: all 0.1s ease-in-out;
 }
 
-ul#book-list a.button:hover {
-  text-decoration: underline
+a.big.button {
+  padding: 0 2rem;
+  height: 70px;
+  line-height: 70px;
+  border-radius: 37px;
+  font-size: 2rem;
+}
+
+a.button:hover {
+  /* text-decoration: underline; */
+  margin: 0;
+  border-width: 2px 2px 6px 6px;
+}
+
+ul#book-list a img {
+  transition: box-shadow 0.1s linear;
+}
+
+ul#book-list a img:hover {
+  box-shadow: 0 10px 35px rgba(0, 76, 239, 0.479);
 }
 
 header#banner {
@@ -157,6 +197,16 @@ a, a:visited {
   background-repeat: no-repeat;
   background-size: cover;
 } */
+
+article > header#theslideprojector {
+  background-color: #0D6CC6;
+}
+
+/* article > header#theslideprojector,
+article > header#theslideprojector a {
+  color: #D1ABCA;
+} */
+
 
 article > header#block {
   background-color: #FFCEFD;
@@ -190,7 +240,7 @@ p.podcast-badges img {
   border-collapse: collapse;
   white-space: 0;
 }
-section, footer > *, article > header > * {
+article > section, footer > *, article > header > * {
   max-width: 650px;
   margin-left: auto;
   margin-right: auto;
