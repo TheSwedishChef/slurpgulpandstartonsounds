@@ -92,6 +92,27 @@ body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
+p.release {
+  padding: 2px 4px;
+  /* margin-bottom: 1rem; */
+  line-height: 1.5rem;
+  /* font-size: 1.25rem; */
+  display: inline;
+  background-color: #004cef;
+  color: #fff;
+  font-style: italic;
+  font-weight: 200;
+}
+
+p.release strong {
+  font-weight: 900;
+}
+
+p.release a {
+  color: #fff;
+  text-decoration: underline;
+}
+
 #gallery {
   display: flex;
   flex-direction: row;
