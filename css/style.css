@@ -209,6 +209,11 @@ header#banner {
   font-size: 0.75rem;
 }
 
+header#banner a {
+  text-decoration: underline;
+  color: white;
+}
+
 a, a:visited {
   color: #2D53FA;
 }
